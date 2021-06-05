@@ -24,11 +24,13 @@ class ProductEntryViewController: UIViewController {
         
         productNameLabel?.text = productName
         productDescriptionLabel?.text = productDescription
-        productPriceLabel?.text = productPrice > 0 || productPrice < 0 ? NSDecimalNumber(decimal: productPrice).description : ""
+        productPriceLabel?.text = productPrice > 0 ? productPrice.description : ""
 
         // Do any additional setup after loading the view.
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveProduct))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save,
+                                                            target: self,
+                                                            action: #selector(saveProduct))
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
