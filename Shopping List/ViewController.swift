@@ -37,13 +37,13 @@ class ViewController: UIViewController {
         addProduct()
     }
 
-    func addProduct(updateProductAtIndex index: Int = -1) {
+    func addProduct(updateProductAtIndex index: Int? = nil) {
         
         
         let vc = storyboard?.instantiateViewController(identifier: "productEntry") as! ProductEntryViewController
         vc.title = "New Product"
         
-        if index > -1 {
+        if let index = index, index >= 0 {
             let product = self.products[index]
             
             vc.productName = product.productName ?? ""
@@ -51,11 +51,9 @@ class ViewController: UIViewController {
             vc.productPrice = product.productPrice?.decimalValue ?? 0
         }
         
-        
-        
-        vc.save = { (name: String, description: String, price: Decimal) in
+        vc.save = { (name, description, price) in
             DispatchQueue.main.async {
-                if index > -1 {
+                if let index = index, index >= 0 {
                     let product = self.products[index]
                     
                     self.updateProduct(product, name: name, description: description, price: price)
@@ -205,21 +203,4 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         addProduct(updateProductAtIndex: indexPath.row)
     }
-}
-
-
-extension UIBarButtonItem {
-    convenience init(image: UIImage, title :String, target: Any?, action: Selector?) {
-        let button = UIButton(type: .system)
-        button.setImage(image, for: .normal)
-        button.setTitle(title, for: .normal)
-        button.sizeToFit()
-
-        if let target = target, let action = action {
-            button.addTarget(target, action: action, for: .touchUpInside)
-        }
-
-        self.init(customView: button)
-    }
-    
 }
