@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F331DE5D266B3B2300C96BD1 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331DE5B266B3B2300C96BD1 /* Product+CoreDataClass.swift */; };
+		F331DE5E266B3B2300C96BD1 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331DE5C266B3B2300C96BD1 /* Product+CoreDataProperties.swift */; };
 		F362BA51266ABB30009BEEB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362BA50266ABB30009BEEB4 /* AppDelegate.swift */; };
 		F362BA53266ABB30009BEEB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362BA52266ABB30009BEEB4 /* SceneDelegate.swift */; };
 		F362BA55266ABB30009BEEB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362BA54266ABB30009BEEB4 /* ViewController.swift */; };
@@ -14,9 +16,14 @@
 		F362BA5B266ABB30009BEEB4 /* Shopping_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F362BA59266ABB30009BEEB4 /* Shopping_List.xcdatamodeld */; };
 		F362BA5D266ABB32009BEEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F362BA5C266ABB32009BEEB4 /* Assets.xcassets */; };
 		F362BA60266ABB32009BEEB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F362BA5E266ABB32009BEEB4 /* LaunchScreen.storyboard */; };
+		F362BA71266ACC0D009BEEB4 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362BA6F266ACC0D009BEEB4 /* ProductTableViewCell.swift */; };
+		F362BA72266ACC0D009BEEB4 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F362BA70266ACC0D009BEEB4 /* ProductTableViewCell.xib */; };
+		F362BA74266AD5F3009BEEB4 /* ProductEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362BA73266AD5F3009BEEB4 /* ProductEntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F331DE5B266B3B2300C96BD1 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F331DE5C266B3B2300C96BD1 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F362BA4D266ABB30009BEEB4 /* Shopping List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F362BA50266ABB30009BEEB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F362BA52266ABB30009BEEB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +33,9 @@
 		F362BA5C266ABB32009BEEB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F362BA5F266ABB32009BEEB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F362BA61266ABB32009BEEB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F362BA6F266ACC0D009BEEB4 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		F362BA70266ACC0D009BEEB4 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		F362BA73266AD5F3009BEEB4 /* ProductEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 		F362BA4F266ABB30009BEEB4 /* Shopping List */ = {
 			isa = PBXGroup;
 			children = (
+				F331DE5B266B3B2300C96BD1 /* Product+CoreDataClass.swift */,
+				F331DE5C266B3B2300C96BD1 /* Product+CoreDataProperties.swift */,
 				F362BA50266ABB30009BEEB4 /* AppDelegate.swift */,
 				F362BA52266ABB30009BEEB4 /* SceneDelegate.swift */,
 				F362BA54266ABB30009BEEB4 /* ViewController.swift */,
@@ -66,6 +78,9 @@
 				F362BA5E266ABB32009BEEB4 /* LaunchScreen.storyboard */,
 				F362BA61266ABB32009BEEB4 /* Info.plist */,
 				F362BA59266ABB30009BEEB4 /* Shopping_List.xcdatamodeld */,
+				F362BA6F266ACC0D009BEEB4 /* ProductTableViewCell.swift */,
+				F362BA70266ACC0D009BEEB4 /* ProductTableViewCell.xib */,
+				F362BA73266AD5F3009BEEB4 /* ProductEntryViewController.swift */,
 			);
 			path = "Shopping List";
 			sourceTree = "<group>";
@@ -128,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F362BA60266ABB32009BEEB4 /* LaunchScreen.storyboard in Resources */,
+				F362BA72266ACC0D009BEEB4 /* ProductTableViewCell.xib in Resources */,
 				F362BA5D266ABB32009BEEB4 /* Assets.xcassets in Resources */,
 				F362BA58266ABB30009BEEB4 /* Main.storyboard in Resources */,
 			);
@@ -142,8 +158,12 @@
 			files = (
 				F362BA55266ABB30009BEEB4 /* ViewController.swift in Sources */,
 				F362BA5B266ABB30009BEEB4 /* Shopping_List.xcdatamodeld in Sources */,
+				F331DE5D266B3B2300C96BD1 /* Product+CoreDataClass.swift in Sources */,
 				F362BA51266ABB30009BEEB4 /* AppDelegate.swift in Sources */,
 				F362BA53266ABB30009BEEB4 /* SceneDelegate.swift in Sources */,
+				F362BA71266ACC0D009BEEB4 /* ProductTableViewCell.swift in Sources */,
+				F362BA74266AD5F3009BEEB4 /* ProductEntryViewController.swift in Sources */,
+				F331DE5E266B3B2300C96BD1 /* Product+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.victoramartinez.Shopping-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.victoramartinez.Shopping-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
